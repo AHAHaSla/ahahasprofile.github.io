@@ -1,0 +1,55 @@
+
+
+<html>
+<head>
+<title>AHAHaS | Navigation</title>
+<link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="icon" type="image/ico" href="1.ico">
+<script src="jQuery.min.js"></script>
+</head>
+<body onLoad="teclear();">
+<div id="center">
+  <audio src="music.mp3" autoplay loop>
+    Your browser does not support the <code>audio</code> element.
+  </audio>
+  <center>
+  <div style="position:absolute; margin-top: 90px; top:0; right:0; bottom:0; left:0;" id="art">
+ <br> AHAHaS</br>     
+
+
+   </center>
+   <script language="javascript">
+   $(".fade").fadeIn('slow');
+   
+   mensaje=
+   '<br><center><ul class="nav"><li></li><li> </li><li><a href="https://goo.gl/EhXbTQ">VK</a>'+
+   '<p><font color="#FFFFFF">+</font><b class="blu">=======================================================</b><font color="#FFFFFF">+</font><br><br>'+
+
+  '<a href="mailto:ahahas.la@yandex.ru" target="_blank" style="text-decoration:none; color:#FF5050;">eMail</a><br><br>'+
+  '<a href="http://steamcommunity.com/id/TheDugaro/" target="_blank" style="text-decoration:none; color:#FF0094;">Steam</a><br><br>'+
+  '<font color="#FFFFFF">+</font><b class="blu">=======================================================</b><font color="#FFFFFF">+</font><br><br></p>'+
+  '<b class="blu">music Kiiara - Tennessee - Nightcore</b><br><br></p>'
+  line=0
+  cursor='_'
+  function teclear(){
+	if(line==mensaje.length) cursor=''
+		ttecleado.innerHTML=mensaje.substring(0,line)+cursor
+	if(line++<mensaje.length) setTimeout("teclear()",1)
+	}
+  </script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-96597836-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  <div style="position:absolute; margin-top: 200px; top:0; right:0; bottom:0; left:0;" id="ttecleado">
+  </div>
+</div>
+</body>
+</html>
